@@ -114,6 +114,8 @@ namespace CryoShaco
         {
             if (CS_player.IsDead || MenuGUI.IsChatOpen()) return;
 
+            CS_AutoSmite();
+
             switch (CS_orbwalker.Mode)
             {
                 case OrbwalkingMode.Combo:
